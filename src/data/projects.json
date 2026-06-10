@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "annee": "2024-2025",
+    "titre": "Nom du projet 1",
+    "image": "/images/projets/projet1.jpg",
+    "description": "Courte description du projet visible quand la card est ouverte. Expliquez ce que vous avez fait, les enjeux, les résultats.",
+    "competences": ["Analyse", "Conception", "Développement"],
+    "technologies": ["Vue.js", "Node.js", "MySQL"],
+    "dateDebut": "Sept. 2024",
+    "dateFin": "Déc. 2024",
+    "lien": ""
+  },
+  {
+    "id": 2,
+    "annee": "2024-2025",
+    "titre": "Nom du projet 2",
+    "image": "/images/projets/projet2.jpg",
+    "description": "Courte description du projet visible quand la card est ouverte.",
+    "competences": ["Base de données", "SQL", "Modélisation"],
+    "technologies": ["PostgreSQL", "Python", "Pandas"],
+    "dateDebut": "Jan. 2025",
+    "dateFin": "Avr. 2025",
+    "lien": ""
+  },
+  {
+    "id": 3,
+    "annee": "2024-2025",
+    "titre": "Nom du projet 3",
+    "image": "/images/projets/projet3.jpg",
+    "description": "Courte description du projet visible quand la card est ouverte.",
+    "competences": ["Réseau", "Sécurité", "Administration"],
+    "technologies": ["Linux", "Bash", "Docker"],
+    "dateDebut": "Fév. 2025",
+    "dateFin": "Mai 2025",
+    "lien": ""
+  },
+  {
+    "id": 4,
+    "annee": "2025-2026",
+    "titre": "Nom du projet 4",
+    "image": "/images/projets/projet4.jpg",
+    "description": "Courte description du projet visible quand la card est ouverte.",
+    "competences": ["API REST", "Architecture", "Tests"],
+    "technologies": ["Express.js", "MongoDB", "Jest"],
+    "dateDebut": "Sept. 2025",
+    "dateFin": "Déc. 2025",
+    "lien": ""
+  },
+  {
+    "id": 5,
+    "annee": "2025-2026",
+    "titre": "Nom du projet 5",
+    "image": "/images/projets/projet5.jpg",
+    "description": "Courte description du projet visible quand la card est ouverte.",
+    "competences": ["UX/UI", "Accessibilité", "Responsive"],
+    "technologies": ["Vue.js", "Figma", "GSAP"],
+    "dateDebut": "Jan. 2026",
+    "dateFin": "En cours",
+    "lien": ""
+  }
+]

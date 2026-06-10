@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+  --bg-color: #F4EEDD;
+  --text-color: #1C1B1A;
+  --accent-orange: #FF5A36;
+  --accent-pink: #FF4782;
+  --accent-yellow: #FFD23F;
+  --accent-blue: #3E8ED0;
+  --border-thick: 4px solid #1C1B1A;
+  
+  font-family: 'Outfit', system-ui, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-signature {
+  padding: 1rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: radial-gradient(var(--accent-yellow) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Typography */
+h1, h2, h3, .retro-font {
+  font-family: 'Shrikhand', cursive;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--accent-orange);
+  text-shadow: 3px 3px 0px #1C1B1A;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--accent-pink);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 0px #1C1B1A;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.badge-meta {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Couleurs spécifiques par compétence */
+.badge-dev { background-color: var(--accent-blue); color: var(--text-color); }
+.badge-opti { background-color: var(--accent-orange); color: var(--text-color); }
+.badge-data { background-color: var(--accent-pink); color: var(--text-color); }
+.badge-needs { background-color: var(--accent-yellow); color: var(--text-color); }
+.badge-plan { background-color: #D3BCC0; color: var(--text-color); } /* Vieux rose */
+.badge-team { background-color: #A5C4D4; color: var(--text-color); } /* Bleu gris */
+
+/* Surlignage du texte */
+.hl-dev { background-color: var(--accent-blue); color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+.hl-opti { background-color: var(--accent-orange); color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+.hl-data { background-color: var(--accent-pink); color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+.hl-needs { background-color: var(--accent-yellow); color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+.hl-plan { background-color: #D3BCC0; color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+.hl-team { background-color: #A5C4D4; color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+
+strong {
+  font-weight: 800;
+  color: var(--accent-orange);
+}
+
+/* App Container */
+#app {
+  max-width: 1600px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 14rem 2rem 2rem 2rem; /* padding top for nav arc */
+}
+
+/* Retro Card / Badge style */
+.retro-card {
+  background-color: #ffffff;
+  border: var(--border-thick);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 6px 6px 0px #1C1B1A;
+  transition: transform 0.2s ease;
+}
+.retro-card:hover {
+  transform: translateY(-4px);
+}
+
+.savoir-faire-badge {
+  display: inline-block;
+  background-color: var(--accent-yellow);
+  border: 2px solid var(--text-color);
+  border-radius: 50px;
+  padding: 0.4rem 1rem;
+  font-weight: 800;
+  font-size: 0.95rem;
+  margin: 0.3rem;
+  box-shadow: 2px 2px 0px #1C1B1A;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  border: var(--border-thick);
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: block;
+}
+
+/* Transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.98);
+}
+
+/* Buttons */
+.btn-retro {
+  background-color: var(--accent-blue);
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border: var(--border-thick);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #1C1B1A;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-retro:hover {
+  background-color: var(--accent-pink);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #1C1B1A;
+}
+.btn-retro:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #1C1B1A;
+}
+
+/* Sub-Navigation (Tabs) */
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background-color: #ffffff;
+  color: var(--text-color);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border: 3px solid #1C1B1A;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px #1C1B1A;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0px #1C1B1A;
+}
+
+.tab-btn.active {
+  background-color: var(--accent-yellow);
+  transform: translateY(2px);
+  box-shadow: 1px 1px 0px #1C1B1A;
+}
+
+/* Layout pour le "sans scroll" */
+.tab-content {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-left: 2px solid var(--text-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-orange);
+  border: 2px solid var(--text-color);
+  border-radius: 10px;
+}

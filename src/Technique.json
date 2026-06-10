@@ -1,0 +1,75 @@
+{
+  "intro": "Présentation des compétences techniques mobilisées durant l'alternance, illustrées par des traces et analysées dans un bilan réflexif.",
+  "traces": [
+    {
+      "id": 1,
+      "titre": "Titre de la trace 1",
+      "figure": {
+        "src": "/images/traces/technique1.png",
+        "legende": "Figure 1 — Titre de la figure. ① Description du point remarquable."
+      },
+      "savoirFaire": ["Développement", "Base de données"],
+      "description": "Cette trace représente [ce qu'elle représente]. Elle s'inscrit dans le cadre du sujet d'alternance portant sur [contexte]. La figure 1 montre le point ① qui correspond à [explication].",
+      "savoirFaireDetails": [
+        {
+          "nom": "Développement",
+          "type": "dev",
+          "pourquoi": "Ce savoir-faire a été utilisé pour [pourquoi]. En pratique, [comment], comme on peut le voir au point ① de la trace n°1."
+        },
+        {
+          "nom": "Base de données",
+          "type": "bdd",
+          "pourquoi": "La compétence BdD a permis de [pourquoi]. Elle se traduit par [comment] (voir figure 1)."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titre": "Titre de la trace 2",
+      "figure": {
+        "src": "/images/traces/technique2.png",
+        "legende": "Figure 2 — Titre de la figure. ① Description du point remarquable."
+      },
+      "savoirFaire": ["Développement", "Architecture"],
+      "description": "Cette trace représente [ce qu'elle représente]. [Description de sa place dans le sujet du stage.]",
+      "savoirFaireDetails": [
+        {
+          "nom": "Développement",
+          "type": "dev",
+          "pourquoi": "[Pourquoi et comment ce savoir-faire a été utilisé, en lien avec la trace n°2.]"
+        },
+        {
+          "nom": "Architecture",
+          "type": "archi",
+          "pourquoi": "[Pourquoi et comment ce savoir-faire a été utilisé, en lien avec la trace n°2.]"
+        }
+      ]
+    }
+  ],
+  "bilan": [
+    {
+      "savoirFaireGeneral": "Développement",
+      "type": "dev",
+      "niveauPourcentage": 70,
+      "niveauLabel": "Bon",
+      "niveauAvant": "Moyen",
+      "niveauApres": "Bon",
+      "tracesAssociees": [1, 2],
+      "contexteUtilisation": "Utilisé dans les traces n°1 et n°2 pour [contexte].",
+      "contexteApprentissage": "Vu en cours — appris et approfondi en alternance.",
+      "difficulteProgression": "[Explication de la progression et des difficultés rencontrées.]"
+    },
+    {
+      "savoirFaireGeneral": "Base de données",
+      "type": "bdd",
+      "niveauPourcentage": 55,
+      "niveauLabel": "Moyen",
+      "niveauAvant": "Débutant",
+      "niveauApres": "Moyen",
+      "tracesAssociees": [1],
+      "contexteUtilisation": "Utilisé dans la trace n°1 pour [contexte].",
+      "contexteApprentissage": "Appris en alternance — non vu en cours avant.",
+      "difficulteProgression": "[Explication.]"
+    }
+  ]
+}

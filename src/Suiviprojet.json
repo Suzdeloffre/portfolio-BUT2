@@ -1,0 +1,58 @@
+{
+  "intro": "Présentation de la démarche de gestion et de suivi du projet d'alternance, illustrée par des traces de travail concret.",
+  "traces": [
+    {
+      "id": 1,
+      "titre": "Titre de la trace 1",
+      "figure": {
+        "src": "/images/traces/suivi1.png",
+        "legende": "Figure 1 — Titre de la figure. ① Description du point remarquable."
+      },
+      "savoirFaire": ["Planification", "Communication"],
+      "description": "[Description de ce que représente la trace et de sa place dans le sujet du stage.]",
+      "savoirFaireDetails": [
+        {
+          "nom": "Planification",
+          "type": "dev",
+          "pourquoi": "[Pourquoi et comment ce savoir-faire a été utilisé, en lien avec la trace n°1.]"
+        },
+        {
+          "nom": "Communication",
+          "type": "bdd",
+          "pourquoi": "[Pourquoi et comment ce savoir-faire a été utilisé, en lien avec la trace n°1.]"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titre": "Titre de la trace 2",
+      "figure": {
+        "src": "/images/traces/suivi2.png",
+        "legende": "Figure 2 — Titre de la figure."
+      },
+      "savoirFaire": ["Organisation"],
+      "description": "[Description de ce que représente la trace et de sa place dans le sujet du stage.]",
+      "savoirFaireDetails": [
+        {
+          "nom": "Organisation",
+          "type": "archi",
+          "pourquoi": "[Pourquoi et comment ce savoir-faire a été utilisé, en lien avec la trace n°2.]"
+        }
+      ]
+    }
+  ],
+  "bilan": [
+    {
+      "savoirFaireGeneral": "Planification",
+      "type": "dev",
+      "niveauPourcentage": 65,
+      "niveauLabel": "Bon",
+      "niveauAvant": "Débutant",
+      "niveauApres": "Bon",
+      "tracesAssociees": [1, 2],
+      "contexteUtilisation": "Utilisé dans les traces n°1 et n°2 pour [contexte].",
+      "contexteApprentissage": "Appris principalement en alternance.",
+      "difficulteProgression": "[Explication.]"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "intro": "Présentation du contexte d'alternance, de l'entreprise, des personnels impliqués et des moyens de travail mis à disposition.",
+  "entreprise": {
+    "nom": "Nom de l'entreprise",
+    "description": "[Secteur, taille, localisation, domaine d'activité]",
+    "personnels": [
+      { "nom": "Prénom Nom", "role": "Tuteur entreprise" },
+      { "nom": "Prénom Nom", "role": "Chef de projet" },
+      { "nom": "Prénom Nom", "role": "Développeur référent" }
+    ],
+    "moyens": [
+      { "nom": "Outil 1", "type": "dev",   "description": "ex : IDE Visual Studio Code" },
+      { "nom": "Outil 2", "type": "bdd",   "description": "ex : Serveur de test interne" },
+      { "nom": "Outil 3", "type": "archi", "description": "ex : Git / GitHub" }
+    ]
+  },
+  "sujet": {
+    "existant": "[Description de l'existant ou de son absence avant l'alternance, et des problèmes que cela posait.]",
+    "description": "[Description du sujet d'alternance : ce qui est demandé, les livrables attendus.]",
+    "enjeux": "[Les enjeux du projet pour l'entreprise.]",
+    "objectifs": [
+      "Objectif 1",
+      "Objectif 2",
+      "Objectif 3"
+    ]
+  },
+  "traces": [
+    {
+      "id": 1,
+      "titre": "Titre de la trace 1",
+      "figure": {
+        "src": "/images/traces/integration1.png",
+        "legende": "Figure 1 — Titre de la figure."
+      },
+      "savoirFaire": ["Intégration", "Autonomie"],
+      "description": "[Description de ce que représente la trace et de sa place dans le sujet du stage.]",
+      "savoirFaireDetails": [
+        {
+          "nom": "Intégration en équipe",
+          "type": "dev",
+          "pourquoi": "[Pourquoi et comment ce savoir-faire a été utilisé.]"
+        }
+      ]
+    }
+  ],
+  "bilan": [
+    {
+      "savoirFaireGeneral": "Intégration professionnelle",
+      "type": "dev",
+      "niveauPourcentage": 80,
+      "niveauLabel": "Très bon",
+      "niveauAvant": "Débutant",
+      "niveauApres": "Très bon",
+      "tracesAssociees": [1],
+      "contexteUtilisation": "Tout au long de l'alternance.",
+      "contexteApprentissage": "Appris entièrement en alternance.",
+      "difficulteProgression": "[Explication de la progression.]"
+    }
+  ]
+}
