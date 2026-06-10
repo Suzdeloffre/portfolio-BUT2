@@ -44,12 +44,15 @@
         </div>
         
         <div class="trace-visual">
-          <img src="/src/assets/trace/canauxTeams.png" alt="Canaux Teams" />
+          <figure>
+            <img src="/src/assets/trace/canauxTeams.png" alt="Canaux Teams" />
+            <figcaption>Trace 9.1 — Canaux Teams : régionaux (encadré rouge 1) et nationaux par service (encadré rouge 2)</figcaption>
+          </figure>
         </div>
         
         <p><strong>Savoir-faire illustrés :</strong> Identifier les bons interlocuteurs dans une organisation étendue, utiliser les outils collaboratifs de manière proactive pour débloquer des situations techniques.</p>
-        <p><strong>Description :</strong> L'EFS dispose de canaux Teams nationaux organisés par domaine (infrastructure, EDI, poste de travail, applications, etc.). En cas de blocage technique, j'utilise ces <span class="hl-team">outils collaboratifs</span> pour solliciter directement les experts compétents au niveau national, plutôt qu'attendre une escalade hiérarchique. Cette organisation s'appuie également sur une réunion d'entraide AMI quotidienne, active toute la journée de shift national : elle permet de poser des questions en direct, de tagger un service ou une personne sur un ticket, et d'<span class="hl-team">identifier les interlocuteurs</span> pour obtenir une réponse rapide — soit vers la bonne fiche de documentation sur XWiki, soit via une explication en temps réel. Cette démarche m'a permis de résoudre des situations que mon périmètre régional seul n'aurait pas pu traiter.</p>
-        <button class="next-tab-btn" @click="activeTab = 'trace10'">Continuer vers Trace 10 ➔</button>
+        <p><strong>Description :</strong> La trace 9.1 montre les canaux Teams de l'EFS. Le premier encadré rouge montre les canaux régionaux, et le deuxième encadré montre les différents canaux nationaux avec les services que l'on peut contacter en cas de problème. En cas de blocage technique, j'utilise ces <span class="hl-team">outils collaboratifs</span> pour solliciter directement les experts compétents au niveau national, plutôt qu'attendre une escalade hiérarchique. Cette organisation s'appuie également sur une réunion d'entraide AMI quotidienne, active toute la journée de shift national : elle permet de poser des questions en direct, de tagger un service ou une personne sur un ticket, et d'<span class="hl-team">identifier les interlocuteurs</span> pour obtenir une réponse rapide. Cette démarche m'a permis de résoudre des situations que mon périmètre régional seul n'aurait pas pu traiter.</p>
+        <button class="next-tab-btn" @click="activeTab = 'trace10'">Continuer vers Trace 10 ➤</button>
       </div>
 
       <!-- Onglet Trace 10 -->
@@ -61,11 +64,14 @@
         </div>
         
         <div class="trace-visual">
-          <img src="/src/assets/trace/rdvLaurentoutlook.png" alt="RDV Laurent Outlook" />
+          <figure>
+            <img src="/src/assets/trace/rdvLaurentoutlook.png" alt="RDV Laurent Outlook" />
+            <figcaption>Trace 10.1 — Calendrier Outlook : points réguliers avec le responsable</figcaption>
+          </figure>
         </div>
         
         <p><strong>Savoir-faire illustrés :</strong> Rendre compte de son activité, s'inscrire dans une relation hiérarchique structurée.</p>
-        <p><strong>Description :</strong> Cet extrait de calendrier Outlook illustre l'organisation de points réguliers avec mon responsable. Ces réunions sont l'occasion de faire le bilan des avancées, de partager les difficultés rencontrées et d'aligner les priorités avec les objectifs du service pour <span class="hl-team">rendre compte</span> efficacement. Elles complètent les échanges informels du quotidien et assurent un suivi formalisé de mon activité, témoignant de mon adaptation à la <span class="hl-team">relation hiérarchique</span>.</p>
+        <p><strong>Description :</strong> La trace 10.1 montre cet extrait de calendrier Outlook illustrant l'organisation de points réguliers avec mon responsable. Ces réunions sont l'occasion de faire le bilan des avancées, de partager les difficultés rencontrées et d'aligner les priorités avec les objectifs du service pour <span class="hl-team">rendre compte</span> efficacement. Elles complètent les échanges informels du quotidien et assurent un suivi formalisé de mon activité, témoignant de mon adaptation à la <span class="hl-team">relation hiérarchique</span>.</p>
         <button class="next-tab-btn" @click="activeTab = 'trace11'">Continuer vers Trace 11 ➔</button>
       </div>
 
@@ -78,11 +84,14 @@
         </div>
         
         <div class="trace-visual">
-          <!-- <img src="/src/assets/trace/organigrammeDSI.png" alt="Organigramme DSI" /> -->
+          <!-- <figure>
+            <img src="/src/assets/trace/orgaDSI.png" alt="Organigramme DSI" />
+            <figcaption>Trace 11.1 — Organigramme de la DSI : position de l'équipe support proximité (encadré rouge)</figcaption>
+          </figure> -->
         </div>
         
         <p><strong>Savoir-faire illustrés :</strong> Comprendre l'organisation d'un service informatique, identifier les interlocuteurs selon leur rôle.</p>
-        <p><strong>Description :</strong> Cet organigramme de la DSI m'a permis, dès mon arrivée, de situer mon équipe (support proximité) dans l'<span class="hl-team">organisation d'un SI</span> générale et d'<span class="hl-team">identifier les rôles</span> et à qui m'adresser selon les types de demandes (infrastructure, LMT, EDI, systèmes décentralisés, etc.). Il m'a également aidée à comprendre l'impact de la restructuration nationale sur l'organisation du service, et à adapter ma communication en fonction du niveau et du rôle de mon interlocuteur.</p>
+        <p><strong>Description :</strong> Vous pouvez voir où je me situe dans le service national grâce à l'encadré rouge et la flèche de la trace 11.1. Cet organigramme de la DSI m'a permis, dès mon arrivée, de situer mon équipe (support proximité) dans l'<span class="hl-team">organisation d'un SI</span> générale et d'<span class="hl-team">identifier les rôles</span> et à qui m'adresser selon les types de demandes (infrastructure, LMT, EDI, systèmes décentralisés, etc.). Il m'a également aidée à comprendre l'impact de la restructuration nationale sur l'organisation du service, et à adapter ma communication en fonction du niveau et du rôle de mon interlocuteur.</p>
         <button class="next-tab-btn" @click="activeTab = 'bilan'">Continuer vers Bilan ➔</button>
       </div>
 
@@ -187,5 +196,23 @@ const activeTab = ref('intro')
   display: flex;
   justify-content: flex-start;
   margin-top: 2rem;
+}
+
+figure {
+  margin: 0;
+  width: 100%;
+}
+
+figcaption {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
 }
 </style>

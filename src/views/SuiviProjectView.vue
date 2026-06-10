@@ -40,7 +40,10 @@
         </div>
         
         <div class="trace-visual">
-          <img src="/src/assets/trace/ganntDedaleprevi.png" alt="Gantt DEDALE" />
+          <figure>
+            <img src="/src/assets/trace/ganntDedaleprevi.png" alt="Gantt DEDALE" />
+            <figcaption>Trace 6.1 — Diagramme de Gantt prévisionnel du projet DEDALE</figcaption>
+          </figure>
         </div>
         
         <p><strong>Savoir-faire illustrés :</strong> Planifier un projet en livrables, anticiper les dépendances, estimer la charge de travail dans un contexte d'alternance.</p>
@@ -57,13 +60,19 @@
         </div>
         
         <div class="trace-visual flex-images">
-          <img src="/src/assets/trace/Tests_recetteVerifEtiquette.png" alt="Rapport de tests — VerifEtiquette" />
-          <img src="/src/assets/trace/rapportTestLivrable2Dedale.png" alt="Rapport de tests — DEDALE livrable 2" />
+          <figure>
+            <img src="/src/assets/trace/Tests_recetteVerifEtiquette.png" alt="Rapport de tests — VerifEtiquette" />
+            <figcaption>Trace 7.1 — Tests de recette VerifEtiquette avant déploiement</figcaption>
+          </figure>
+          <figure>
+            <img src="/src/assets/trace/rapportTestLivrable2Dedale.png" alt="Rapport de tests — DEDALE livrable 2" />
+            <figcaption>Trace 7.2 — Rapport de tests du livrable 2 de DEDALE</figcaption>
+          </figure>
         </div>
         
         <p><strong>Savoir-faire illustrés :</strong> Définir et exécuter un plan de tests, identifier les comportements inattendus liés à l'environnement matériel.</p>
-        <p><strong>Description :</strong> La première image présente les tests de recette réalisés pour VerifEtiquette avant déploiement. Cette démarche a permis d'<span class="hl-opti">identifier un comportement inattendu lié à l'environnement matériel</span> : la douchette de l'utilisatrice envoyait une tabulation au lieu d'une validation en fin de scan, nécessitant un ajustement du programme.</p>
-        <p>La deuxième image illustre le rapport de tests du livrable 2 de DEDALE. Un rapport est initialisé à chaque nouveau livrable, liste les fonctionnalités attendues, puis est mis à jour régulièrement. Il est partagé avec l'équipe via un répertoire commun, assurant une visibilité sur l'état d'avancement entre les périodes en entreprise et les semaines école. Les codes couleurs et commentaires permettent à un collègue de <span class="hl-dev">reprendre le plan de test</span> rapidement.</p>
+        <p><strong>Description :</strong> La trace 7.1 présente les tests de recette réalisés pour VerifEtiquette avant déploiement. Cette démarche a permis d'<span class="hl-opti">identifier un comportement inattendu lié à l'environnement matériel</span> : la douchette de l'utilisateur envoyait une tabulation au lieu d'une validation en fin de scan, nécessitant un ajustement du programme.</p>
+        <p>La trace 7.2 illustre le rapport de tests du livrable 2 de DEDALE. Un rapport est initialisé à chaque nouveau livrable, liste les fonctionnalités attendues, puis est mis à jour régulièrement. Il est partagé avec l'équipe via un répertoire commun, assurant une visibilité sur l'état d'avancement entre les périodes en entreprise et les semaines école. Les codes couleurs et commentaires permettent à un collègue de <span class="hl-dev">reprendre le plan de test</span> rapidement.</p>
         <button class="next-tab-btn" @click="activeTab = 'trace8'">Continuer vers Trace 8 ➔</button>
       </div>
 
@@ -76,11 +85,14 @@
         </div>
         
         <div class="trace-visual">
-          <img src="/src/assets/trace/cdcdedaleCritereRecette.png" alt="Critères de recette — cahier des charges DEDALE" />
+          <figure>
+            <img src="/src/assets/trace/cdcdedaleCritereRecette.png" alt="Critères de recette — cahier des charges DEDALE" />
+            <figcaption>Trace 8.1 — Cahier des charges DEDALE : critères de recette et évolutions (encadré rouge)</figcaption>
+          </figure>
         </div>
         
         <p><strong>Savoir-faire illustrés :</strong> Maintenir une documentation projet vivante, gérer les évolutions du besoin en cours de développement.</p>
-        <p><strong>Description :</strong> Suite au comité de pilotage du premier livrable, le cahier des charges a été mis à jour pour <span class="hl-team">gérer les évolutions du besoin</span> et intégrer les retours de l'équipe, matérialisés par des ajouts surlignés en jaune. Un historique des versions est maintenu pour distinguer les besoins initiaux des évolutions demandées en cours de projet. Le document comprend 12 parties et intègre notamment les critères de recette, permettant de <span class="hl-plan">maintenir une documentation projet vivante</span> et définir objectivement les conditions de validation de chaque livrable.</p>
+        <p><strong>Description :</strong> Suite au comité de pilotage du premier livrable, le cahier des charges a été mis à jour pour <span class="hl-team">gérer les évolutions du besoin</span> et intégrer les retours de l'équipe (encadré rouge de la trace 8.1), matérialisés par des ajouts surlignés en jaune. Un historique des versions est maintenu pour distinguer les besoins initiaux des évolutions demandées en cours de projet. Le document comprend 12 parties et intègre notamment les critères de recette, permettant de <span class="hl-plan">maintenir une documentation projet vivante</span> et définir objectivement les conditions de validation de chaque livrable.</p>
         <button class="next-tab-btn" @click="activeTab = 'bilan'">Continuer vers Bilan ➔</button>
       </div>
 
@@ -190,5 +202,22 @@ const activeTab = ref('intro')
   display: flex;
   justify-content: flex-end;
   margin-top: 2rem;
+}
+figure {
+  margin: 0;
+  width: 100%;
+}
+
+figcaption {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
 }
 </style>
