@@ -33,27 +33,7 @@
 
       <!-- Onglet Trace 6 -->
       <div v-if="activeTab === 'trace6'" class="retro-card trace-card">
-        <h3>Trace 6 : Planification et suivi temporel (DEDALE)</h3>
-        <div class="badge-meta">
-          <span class="savoir-faire-badge badge-plan">Planifier</span>
-          <span class="savoir-faire-badge badge-plan">Estimer la charge</span>
-        </div>
-        
-        <div class="trace-visual">
-          <figure>
-            <img src="/src/assets/trace/ganntDedaleprevi.png" alt="Gantt DEDALE" />
-            <figcaption>Trace 6.1 — Diagramme de Gantt prévisionnel du projet DEDALE</figcaption>
-          </figure>
-        </div>
-        
-        <p><strong>Savoir-faire illustrés :</strong> Planifier un projet en livrables, anticiper les dépendances, estimer la charge de travail dans un contexte d'alternance.</p>
-        <p><strong>Description :</strong> Ce diagramme de Gantt <span class="hl-plan">structure le projet en six livrables</span>. Le premier a été dédié à la prise en main de l'existant et de la base de données, avec affichage des données via des jeux d'essais — choix délibéré pour ne pas développer sur une base mal comprise. Le deuxième livrable constitue le cœur fonctionnel (gestion de stock). La planification intègre les alternances semaines école/semaines entreprise pour <span class="hl-plan">estimer la charge de travail</span> et rester réaliste. Des retards ont été accumulés en raison d'anomalies imprévues et de shifts de maintenance nationale ; ils ont conduit à réévaluer les priorités et à reporter certaines fonctionnalités aux livrables suivants.</p>
-        <button class="next-tab-btn" @click="activeTab = 'trace7'">Continuer vers Trace 7 ➔</button>
-      </div>
-
-      <!-- Onglet Trace 7 -->
-      <div v-if="activeTab === 'trace7'" class="retro-card trace-card">
-        <h3>Trace 7 : Tests et assurance qualité</h3>
+        <h3>Trace 6 : Tests et assurance qualité</h3>
         <div class="badge-meta">
           <span class="savoir-faire-badge badge-dev">Plan de test</span>
           <span class="savoir-faire-badge badge-opti">Environnement matériel</span>
@@ -62,17 +42,37 @@
         <div class="trace-visual flex-images">
           <figure>
             <img src="/src/assets/trace/Tests_recetteVerifEtiquette.png" alt="Rapport de tests — VerifEtiquette" />
-            <figcaption>Trace 7.1 — Tests de recette VerifEtiquette avant déploiement</figcaption>
+            <figcaption>Trace 6.1 — Tests de recette VerifEtiquette avant déploiement</figcaption>
           </figure>
           <figure>
             <img src="/src/assets/trace/rapportTestLivrable2Dedale.png" alt="Rapport de tests — DEDALE livrable 2" />
-            <figcaption>Trace 7.2 — Rapport de tests du livrable 2 de DEDALE</figcaption>
+            <figcaption>Trace 6.2 — Rapport de tests du livrable 2 de DEDALE</figcaption>
           </figure>
         </div>
         
         <p><strong>Savoir-faire illustrés :</strong> Définir et exécuter un plan de tests, identifier les comportements inattendus liés à l'environnement matériel.</p>
-        <p><strong>Description :</strong> La trace 7.1 présente les tests de recette réalisés pour VerifEtiquette avant déploiement. Cette démarche a permis d'<span class="hl-opti">identifier un comportement inattendu lié à l'environnement matériel</span> : la douchette de l'utilisateur envoyait une tabulation au lieu d'une validation en fin de scan, nécessitant un ajustement du programme.</p>
-        <p>La trace 7.2 illustre le rapport de tests du livrable 2 de DEDALE. Un rapport est initialisé à chaque nouveau livrable, liste les fonctionnalités attendues, puis est mis à jour régulièrement. Il est partagé avec l'équipe via un répertoire commun, assurant une visibilité sur l'état d'avancement entre les périodes en entreprise et les semaines école. Les codes couleurs et commentaires permettent à un collègue de <span class="hl-dev">reprendre le plan de test</span> rapidement.</p>
+        <p><strong>Description :</strong> La trace 6.1 présente les tests de recette réalisés pour VerifEtiquette avant déploiement. Cette démarche a permis d'<span class="hl-opti">identifier un comportement inattendu lié à l'environnement matériel</span> : la douchette de l'utilisateur envoyait une tabulation au lieu d'une validation en fin de scan, nécessitant un ajustement du programme.</p>
+        <p>La trace 6.2 présente le rapport de tests du livrable 2 de DEDALE. Ce rapport est <span class="hl-dev">rédigé dès le début du développement d'un livrable</span>, avant même de commencer à coder, afin de me servir de feuille de route tout au long du développement et de savoir où j'en suis à tout moment. Il est mis à jour régulièrement et partagé avec l'équipe via un répertoire commun, leur offrant un visuel de l'état de l'application entre les périodes en entreprise et les semaines école. Les codes couleurs et commentaires permettent à un collègue de <span class="hl-plan">reprendre le contexte</span> rapidement.</p>
+        <button class="next-tab-btn" @click="activeTab = 'trace7'">Continuer vers Trace 7 ➔</button>
+      </div>
+
+      <!-- Onglet Trace 7 -->
+      <div v-if="activeTab === 'trace7'" class="retro-card trace-card">
+        <h3>Trace 7 : Planification et suivi temporel (DEDALE)</h3>
+        <div class="badge-meta">
+          <span class="savoir-faire-badge badge-plan">Planifier</span>
+          <span class="savoir-faire-badge badge-plan">Estimer la charge</span>
+        </div>
+        
+        <div class="trace-visual">
+          <figure>
+            <img src="/src/assets/trace/ganntDedaleprevi.png" alt="Gantt DEDALE" />
+            <figcaption>Trace 7.1 — Diagramme de Gantt prévisionnel du projet DEDALE</figcaption>
+          </figure>
+        </div>
+        
+        <p><strong>Savoir-faire illustrés :</strong> Planifier un projet en livrables, anticiper les dépendances, estimer la charge de travail dans un contexte d'alternance.</p>
+        <p><strong>Description :</strong> Ce diagramme de Gantt <span class="hl-plan">structure le projet en six livrables</span>. Le premier a été dédié à la prise en main de l'existant et de la base de données, avec affichage des données via des jeux d'essais — choix délibéré pour ne pas développer sur une base mal comprise. Le deuxième livrable constitue le cœur fonctionnel (gestion de stock). La planification intègre les alternances semaines école/semaines entreprise pour <span class="hl-plan">estimer la charge de travail</span> et rester réaliste. Des retards ont été accumulés en raison d'anomalies imprévues et de shift de support informatique ; ils ont conduit à réévaluer les priorités et à reporter certaines fonctionnalités aux livrables suivants.</p>
         <button class="next-tab-btn" @click="activeTab = 'trace8'">Continuer vers Trace 8 ➔</button>
       </div>
 
@@ -138,7 +138,7 @@ const activeTab = ref('intro')
   padding: 0.5rem 2rem;
   border: var(--border-thick);
   border-radius: 50px;
-  transform: rotate(-1deg);
+  transform: rotate(3deg);
 }
 
 .trace-card {

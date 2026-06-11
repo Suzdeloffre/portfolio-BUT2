@@ -10,7 +10,6 @@
       <button :class="['tab-btn', { active: activeTab === 'intro' }]" @click="activeTab = 'intro'">Intro</button>
       <button :class="['tab-btn', { active: activeTab === 'trace9' }]" @click="activeTab = 'trace9'">Trace 9</button>
       <button :class="['tab-btn', { active: activeTab === 'trace10' }]" @click="activeTab = 'trace10'">Trace 10</button>
-      <button :class="['tab-btn', { active: activeTab === 'trace11' }]" @click="activeTab = 'trace11'">Trace 11</button>
       <button :class="['tab-btn', { active: activeTab === 'bilan' }]" @click="activeTab = 'bilan'">Bilan</button>
     </nav>
 
@@ -29,7 +28,7 @@
         </div>
         <div class="retro-card">
           <h2>Collaboration et accompagnement</h2>
-          <p>Sur le projet DEDALE, j'ai travaillé régulièrement avec David Benssoussan. Nos domaines techniques diffèrent, mais nos échanges ont abouti à des solutions concrètes. Je soumets régulièrement mon code à sa relecture pour m'assurer de sa maintenabilité dans le contexte de l'application existante.</p>
+          <p>Sur le projet DEDALE, j'ai travaillé régulièrement avec David Bensoussan. Nos domaines techniques diffèrent, mais nos échanges ont abouti à des solutions concrètes. Je soumets régulièrement mon code à sa relecture pour m'assurer de sa maintenabilité dans le contexte de l'application existante.</p>
           <p>Des points réguliers avec mon responsable Laurent Sanseigne structurent le suivi de mon activité, en complément d'une communication informelle au quotidien.</p>
         </div>
         <button class="next-tab-btn" @click="activeTab = 'trace9'">Continuer vers Trace 9 ➔</button>
@@ -72,27 +71,7 @@
         
         <p><strong>Savoir-faire illustrés :</strong> Rendre compte de son activité, s'inscrire dans une relation hiérarchique structurée.</p>
         <p><strong>Description :</strong> La trace 10.1 montre cet extrait de calendrier Outlook illustrant l'organisation de points réguliers avec mon responsable. Ces réunions sont l'occasion de faire le bilan des avancées, de partager les difficultés rencontrées et d'aligner les priorités avec les objectifs du service pour <span class="hl-team">rendre compte</span> efficacement. Elles complètent les échanges informels du quotidien et assurent un suivi formalisé de mon activité, témoignant de mon adaptation à la <span class="hl-team">relation hiérarchique</span>.</p>
-        <button class="next-tab-btn" @click="activeTab = 'trace11'">Continuer vers Trace 11 ➔</button>
-      </div>
-
-      <!-- Onglet Trace 11 -->
-      <div v-if="activeTab === 'trace11'" class="retro-card trace-card">
-        <h3>Trace 11 : Positionnement dans l'organisation</h3>
-        <div class="badge-meta">
-          <span class="savoir-faire-badge badge-team">Organisation d'un SI</span>
-          <span class="savoir-faire-badge badge-team">Identifier les rôles</span>
-        </div>
-        
-        <div class="trace-visual">
-          <!-- <figure>
-            <img src="/src/assets/trace/orgaDSI.png" alt="Organigramme DSI" />
-            <figcaption>Trace 11.1 — Organigramme de la DSI : position de l'équipe support proximité (encadré rouge)</figcaption>
-          </figure> -->
-        </div>
-        
-        <p><strong>Savoir-faire illustrés :</strong> Comprendre l'organisation d'un service informatique, identifier les interlocuteurs selon leur rôle.</p>
-        <p><strong>Description :</strong> Vous pouvez voir où je me situe dans le service national grâce à l'encadré rouge et la flèche de la trace 11.1. Cet organigramme de la DSI m'a permis, dès mon arrivée, de situer mon équipe (support proximité) dans l'<span class="hl-team">organisation d'un SI</span> générale et d'<span class="hl-team">identifier les rôles</span> et à qui m'adresser selon les types de demandes (infrastructure, LMT, EDI, systèmes décentralisés, etc.). Il m'a également aidée à comprendre l'impact de la restructuration nationale sur l'organisation du service, et à adapter ma communication en fonction du niveau et du rôle de mon interlocuteur.</p>
-        <button class="next-tab-btn" @click="activeTab = 'bilan'">Continuer vers Bilan ➔</button>
+        <button class="next-tab-btn" @click="activeTab = 'bilan'">Continuer vers Bilan ➤</button>
       </div>
 
       <!-- Onglet Bilan -->
@@ -138,7 +117,7 @@ const activeTab = ref('intro')
   padding: 0.5rem 2rem;
   border: var(--border-thick);
   border-radius: 50px;
-  transform: rotate(1deg);
+  transform: rotate(-3deg);
 }
 
 .trace-card {

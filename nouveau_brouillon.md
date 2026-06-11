@@ -53,7 +53,7 @@ J'ai intégré cette équipe afin de répondre à des besoins de support et de m
 ### Projet 2 : Module de gestion de stock DEDALE (PHP / Oracle / JavaScript)
 
 - **Développement web et asynchronisme :** Intégration dans une application existante des années 2000, en PHP sans framework. Pour dynamiser l'interface sans rechargement de page, j'ai utilisé AJAX (Asynchronous JavaScript and XML), technique permettant au navigateur d'envoyer et de recevoir des données du serveur en arrière-plan.
-- **Logique algorithmique et structure de données :** Suite à une réflexion sur la cohérence entre les champs de saisie (code-barres et quantité), j'ai conçu un buffer de scan utilisant la clé produit comme identifiant unique. Cette réflexion m'a amené à découvrir que les tableaux PHP sont nativement des maps associatives (clé → valeur), rendant l'implémentation côté serveur directement compatible. Mon collègue David Benssoussan a suggéré l'utilisation d'un tableau ; j'ai identifié la structure Map comme solution au problème de cohérence inter-champs.
+- **Logique algorithmique et structure de données :** Suite à une réflexion sur la cohérence entre les champs de saisie (code-barres et quantité), j'ai conçu un buffer de scan utilisant la clé produit comme identifiant unique. Cette réflexion m'a amené à découvrir que les tableaux PHP sont nativement des maps associatives (clé → valeur), rendant l'implémentation côté serveur directement compatible. Mon collègue David Bensussan a suggéré l'utilisation d'un tableau ; j'ai identifié la structure Map comme solution au problème de cohérence inter-champs.
 - **Base de données :** Intégration de nouvelles tables dans une base Oracle existante, en respectant les conventions en place (nommage, types d'attributs, gestion des historiques). Accès aux données via les fonctions natives `db.fetch` et `db.execute` en PHP.
 
 ---
@@ -72,7 +72,7 @@ J'ai intégré cette équipe afin de répondre à des besoins de support et de m
 
 Ce choix d'architecture répond à une contrainte concrète : je suis la seule développeuse de cette application, et les utilisatrices de la biothèque doivent pouvoir modifier certains paramètres sans intervenir sur le code. Le fichier `.ini` externalise trois éléments : le nom de l'imprimante, le chemin des fichiers de trace, et la liste des visas techniciens autorisés que l'on voit dans la trace 1.2 du document où l'on voit le fichier .ini. Cela permet, par exemple, d'ajouter le visa d'un nouveau collaborateur sans aucune modification du script.
 
-Pour garantir la maintenabilité au-delà de ma présence, j'ai rédigé une fiche de documentation publiée sur la plateforme nationale XWiki de l'EFS (trace 1.2 et 1.3). Accessible à tous les techniciens de support au niveau national, cette fiche décrit l'arborescence du dossier programme, le fonctionnement du fichier `.ini`, les dysfonctionnements typiques et les commandes PowerShell de diagnostic associées. Concrètement, si un technicien AMI national est appelé pour un incident sur ce poste à Dijon, il peut consulter cette fiche sans avoir à me contacter — ce qui était l'un des objectifs explicites de la conception.
+Pour garantir la maintenabilité au-delà de ma présence, j'ai rédigé une fiche de documentation publiée sur la plateforme nationale XWiki de l'EFS (trace 1.2 et 1.3). Accessible à tous les techniciens de support au niveau national, cette fiche décrit l'arborescence du dossier programme, le fonctionnement du fichier `.ini`, les dysfonctionnements typiques et les commandes PowerShell de diagnostic associées. Concrètement, si un technicien de support informatique (AMI) national est appelé pour un incident sur ce poste à Dijon, il peut consulter cette fiche sans avoir à me contacter — ce qui était l'un des objectifs explicites de la conception.
 
 ---
 
@@ -167,7 +167,7 @@ Le dictionnaire de données joint précise pour chaque attribut de `NETWORK_HIST
 
 *Savoir-faire illustrés : Planifier un projet en livrables, anticiper les dépendances, estimer la charge de travail dans un contexte d'alternance.*
 
-*Description :* Ce diagramme de Gantt structure le projet en six livrables. Le premier a été dédié à la prise en main de l'existant et de la base de données, avec affichage des données via des jeux d'essais — choix délibéré pour ne pas développer sur une base mal comprise. Le deuxième livrable constitue le cœur fonctionnel (gestion de stock). La planification intègre les alternances semaines école/semaines entreprise pour rester réaliste. Des retards ont été accumulés en raison d'anomalies imprévues et de shifts de maintenance nationale ; ils ont conduit à réévaluer les priorités et à reporter certaines fonctionnalités aux livrables suivants.
+*Description :* Ce diagramme de Gantt structure le projet en six livrables. Le premier a été dédié à la prise en main de l'existant et de la base de données, avec affichage des données via des jeux d'essais — choix délibéré pour ne pas développer sur une base mal comprise. Le deuxième livrable constitue le cœur fonctionnel (gestion de stock). La planification intègre les alternances semaines école/semaines entreprise pour rester réaliste. Des retards ont été accumulés en raison d'anomalies imprévues et de shift de support informatique ; ils ont conduit à réévaluer les priorités et à reporter certaines fonctionnalités aux livrables suivants.
 
 ---
 
@@ -216,7 +216,7 @@ La deuxième image de la trace 7 illustre le rapport de tests du livrable 2 de D
 
 ### Collaboration et accompagnement
 
-- Sur le projet DEDALE, j'ai travaillé régulièrement avec David Benssoussan. Nos domaines techniques diffèrent, mais nos échanges ont abouti à des solutions concrètes. Je soumets régulièrement mon code à sa relecture pour m'assurer de sa maintenabilité dans le contexte de l'application existante.
+- Sur le projet DEDALE, j'ai travaillé régulièrement avec David Bensussan. Nos domaines techniques diffèrent, mais nos échanges ont abouti à des solutions concrètes. Je soumets régulièrement mon code à sa relecture pour m'assurer de sa maintenabilité dans le contexte de l'application existante.
 - Des points réguliers avec mon responsable Laurent Sanseigne structurent le suivi de mon activité, en complément d'une communication informelle au quotidien.
 
 ---

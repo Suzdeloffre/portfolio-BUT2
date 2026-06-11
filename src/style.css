@@ -83,13 +83,35 @@ p {
 .badge-plan { background-color: #D3BCC0; color: var(--text-color); } /* Vieux rose */
 .badge-team { background-color: #A5C4D4; color: var(--text-color); } /* Bleu gris */
 
-/* Surlignage du texte */
-.hl-dev { background-color: var(--accent-blue); color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
-.hl-opti { background-color: var(--accent-orange); color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
-.hl-data { background-color: var(--accent-pink); color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
-.hl-needs { background-color: var(--accent-yellow); color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
-.hl-plan { background-color: #D3BCC0; color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
-.hl-team { background-color: #A5C4D4; color: var(--text-color); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+/* Surlignage du texte — couleurs transparentes par compétence */
+/* Jaune (trace 1 — vulgariser, logique prog) */
+.hl-yellow { background-color: rgba(255, 220, 80, 0.35); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+/* Bleu (trace 1 — valider compréhension, workflow référence) */
+.hl-blue { background-color: rgba(100, 160, 255, 0.3); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+/* Vert (trace 2 — architecture maintenable, .ini) */
+.hl-green { background-color: rgba(100, 200, 120, 0.35); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+/* Rose (trace 2 — documentation, XWiki) */
+.hl-pink { background-color: rgba(240, 130, 170, 0.3); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+/* Violet (trace 3 — algorithme vérification) */
+.hl-purple { background-color: rgba(170, 120, 220, 0.3); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+/* Orange (trace 3 — état GUI) */
+.hl-orange { background-color: rgba(255, 170, 80, 0.35); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+/* Cyan (trace 4 — modélisation BDD) */
+.hl-cyan { background-color: rgba(80, 200, 220, 0.3); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+/* Magenta (trace 4 — documentation technique) */
+.hl-magenta { background-color: rgba(200, 80, 180, 0.25); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+/* Teal (trace 5 — gestion d'état) */
+.hl-teal { background-color: rgba(60, 180, 170, 0.3); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+/* Ambre (trace 5 — structure de données) */
+.hl-amber { background-color: rgba(240, 180, 60, 0.3); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+
+/* Classes legacy (suivi projet, intégration) */
+.hl-dev { background-color: rgba(100, 160, 255, 0.3); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+.hl-opti { background-color: rgba(255, 170, 80, 0.35); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+.hl-data { background-color: rgba(80, 200, 220, 0.3); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+.hl-needs { background-color: rgba(255, 220, 80, 0.35); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+.hl-plan { background-color: rgba(200, 160, 180, 0.35); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
+.hl-team { background-color: rgba(120, 170, 200, 0.35); padding: 0.1rem 0.3rem; border-radius: 4px; font-weight: bold; }
 
 strong {
   font-weight: 800;
@@ -119,17 +141,24 @@ strong {
 }
 
 .savoir-faire-badge {
-  display: inline-block;
-  background-color: var(--accent-yellow);
-  border: 2px solid var(--text-color);
-  border-radius: 50px;
-  padding: 0.4rem 1rem;
-  font-weight: 800;
-  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1.5px dashed var(--text-color);
+  border-radius: 6px;
+  padding: 0.3rem 0.8rem;
+  font-weight: 700;
+  font-size: 0.85rem;
   margin: 0.3rem;
-  box-shadow: 2px 2px 0px #1C1B1A;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: none;
+  color: var(--text-color);
+}
+.savoir-faire-badge::before {
+  content: '#';
+  margin-right: 0.4rem;
+  opacity: 0.6;
 }
 
 /* Image styling */

@@ -32,7 +32,7 @@
         <div class="retro-card">
           <h2>Projet 2 : Module de gestion de stock DEDALE (PHP / Oracle / JavaScript)</h2>
           <p><strong>Développement web et asynchronisme :</strong> Intégration dans une application existante des années 2000, en PHP sans framework. Pour dynamiser l'interface sans rechargement de page, j'ai utilisé AJAX (Asynchronous JavaScript and XML), technique permettant au navigateur d'envoyer et de recevoir des données du serveur en arrière-plan.</p>
-          <p><strong>Logique algorithmique et structure de données :</strong> Suite à une réflexion sur la cohérence entre les champs de saisie (code-barres et quantité), j'ai conçu un buffer de scan utilisant la clé produit comme identifiant unique. Cette réflexion m'a amené à découvrir que les tableaux PHP sont nativement des maps associatives (clé → valeur), rendant l'implémentation côté serveur directement compatible. Mon collègue David Benssoussan a suggéré l'utilisation d'un tableau ; j'ai identifié la structure Map comme solution au problème de cohérence inter-champs.</p>
+          <p><strong>Logique algorithmique et structure de données :</strong> Suite à une réflexion sur la cohérence entre les champs de saisie (code-barres et quantité), j'ai conçu un buffer de scan utilisant la clé produit comme identifiant unique. Cette réflexion m'a amené à découvrir que les tableaux PHP sont nativement des maps associatives (clé → valeur), rendant l'implémentation côté serveur directement compatible. Mon collègue David Bensoussan a suggéré l'utilisation d'un tableau ; j'ai identifié la structure Map comme solution au problème de cohérence inter-champs.</p>
           <p><strong>Base de données :</strong> Intégration de nouvelles tables dans une base Oracle existante, en respectant les conventions en place (nommage, types d'attributs, gestion des historiques). Accès aux données via les fonctions natives <code>db.fetch</code> et <code>db.execute</code> en PHP.</p>
         </div>
         <button class="next-tab-btn" @click="activeTab = 'trace1'">Continuer vers Trace 1 ➔</button>
@@ -40,46 +40,7 @@
 
       <!-- Onglet Trace 1 -->
       <div v-if="activeTab === 'trace1'" class="retro-card trace-card">
-        <h3>Trace 1 : Architecture modulaire et documentation nationale (VerifEtiquette)</h3>
-        <div class="badge-meta">
-          <span class="savoir-faire-badge badge-dev">Architecture logicielle</span>
-          <span class="savoir-faire-badge badge-plan">Documentation</span>
-        </div>
-        
-        <div class="trace-visual flex-images">
-          <figure>
-            <img src="/src/assets/trace/initialiserChemintraceVerifEtiquette.png" alt="Trace initialisation" />
-            <figcaption>Trace 1.1 — Fonction Initialiser-CheminTrace (code PowerShell)</figcaption>
-          </figure>
-          <figure>
-            <img src="/src/assets/trace/ficheIntiVerifEtiquette.png" alt="Fiche INTI XWiki - page principale" />
-            <figcaption>Trace 1.2 — Fiche XWiki : page principale et fichier .ini</figcaption>
-          </figure>
-          <figure>
-            <img src="/src/assets/trace/ficheIntiVerifEtiquette2.png" alt="Fiche INTI XWiki - fichier configuration" />
-            <figcaption>Trace 1.3 — Fiche XWiki : liste des visas autorisés dans le .ini</figcaption>
-          </figure>
-          <figure>
-            <img src="/src/assets/trace/ficheIntiVerifEtiquette3.png" alt="Fiche INTI XWiki - raccourci lancement" />
-            <figcaption>Trace 1.4 — Fiche XWiki : raccourci de lancement</figcaption>
-          </figure>
-          <figure>
-            <img src="/src/assets/trace/ficheIntiVerifEtiquette4.png" alt="Fiche INTI XWiki - dysfonctionnements" />
-            <figcaption>Trace 1.5 — Fiche XWiki : dysfonctionnements courants et diagnostic</figcaption>
-          </figure>
-        </div>
-        
-        <p><strong>Savoir-faire illustrés :</strong> Concevoir une architecture logicielle maintenable par des non-développeurs, rédiger une documentation opérationnelle destinée à des techniciens tiers.</p>
-        <p><strong>Description :</strong> Dans la trace 1.1, cet extrait de code montre la fonction <code>Initialiser-CheminTrace</code>. Elle lit d'abord le chemin du dossier de traces dans l'encadré rouge dans le fichier de configuration <code>.ini</code>, puis enchaîne une série de vérifications défensives (flèches rouges) : existence du lecteur réseau, existence du dossier cible (créé automatiquement si absent), et permissions d'écriture testées via un fichier temporaire. En cas d'échec à n'importe quelle étape, une exception explicite est levée avec un message d'erreur contextualisé. Cela montre une <span class="hl-dev">architecture logicielle robuste</span>.</p>
-        <p>Ce choix d'architecture répond à une contrainte concrète : je suis la seule développeuse de cette application, et les utilisateurs de la biothèque doivent pouvoir modifier certains paramètres sans intervenir sur le code. Le fichier <code>.ini</code>, dont on voit le contenu dans la trace 1.2, externalise trois éléments : le nom de l'imprimante, le chemin des fichiers de trace, et la liste des visas techniciens autorisés que l'on voit dans la trace 1.3. Cela permet, par exemple, d'ajouter le visa d'un nouveau collaborateur sans aucune modification du script.</p>
-        <p>Pour garantir la maintenabilité au-delà de ma présence, j'ai <span class="hl-plan">rédigé une documentation</span> publiée sur la plateforme nationale XWiki de l'EFS (traces 1.2 à 1.5). Accessible à tous les techniciens de support au niveau national, cette fiche décrit l'arborescence du dossier programme, le fonctionnement du fichier <code>.ini</code>, les dysfonctionnements typiques et les commandes PowerShell de diagnostic associées (trace 1.5). Concrètement, si un technicien AMI national est appelé pour un incident sur ce poste à Dijon, il peut consulter cette fiche sans avoir à me contacter — ce qui était l'un des objectifs explicites de la conception.</p>
-        
-        <button class="next-tab-btn" @click="activeTab = 'trace2'">Continuer vers Trace 2 ➤</button>
-      </div>
-
-      <!-- Onglet Trace 2 -->
-      <div v-if="activeTab === 'trace2'" class="retro-card trace-card">
-        <h3>Trace 2 : Modélisation du processus métier (VerifEtiquette)</h3>
+        <h3>Trace 1 : Modélisation du processus métier (VerifEtiquette)</h3>
         <div class="badge-meta">
           <span class="savoir-faire-badge badge-needs">Vulgariser un besoin</span>
           <span class="savoir-faire-badge badge-dev">Logique de programmation</span>
@@ -88,14 +49,45 @@
         <div class="trace-visual">
           <figure>
             <img src="/src/assets/trace/workFlowverifEtiquette.png" alt="Workflow VerifEtiquette" />
-            <figcaption>Trace 2.1 — Workflow du processus de décantation de paillettes</figcaption>
+            <figcaption>Trace 1.1 — Workflow du processus de décantation de paillettes</figcaption>
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> Traduire un processus métier en logique de programmation, valider la compréhension du besoin avec un interlocuteur non-informaticien.</p>
-        <p><strong>Description :</strong> Ce workflow (trace 2) a été réalisé dès la première réunion avec la biothèque, pour <span class="hl-needs">vulgariser le besoin</span> et formaliser le processus de décantation afin d'en déduire la <span class="hl-dev">logique de programmation</span> applicative. Il a évolué à plusieurs reprises au fil des échanges pour intégrer de nouvelles règles de gestion, comme la validation des visas techniciens. Il constitue le support utilisé pour confirmer avec les utilisateurs que le comportement attendu du programme correspond bien à la réalité du terrain.</p>
-        <p>Sa réalisation n'a pas été sans difficulté : il a fallu se mettre d'accord sur l'ordre des opérations — notamment savoir à quel moment coller l'étiquette sur le tube et s'il fallait d'abord scanner les paillettes. Ce processus n'étant pas officiellement inscrit nulle part, le workflow a servi de document de référence pour fixer ces décisions.</p>
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-yellow">Traduire un processus métier en logique de programmation</span>, <span class="hl-blue">valider la compréhension du besoin avec un interlocuteur non-informaticien</span>.</p>
+        <p><strong>Description :</strong> Ce workflow (trace 1) a été réalisé dès la première réunion avec la biothèque, pour <span class="hl-yellow">vulgariser le besoin</span> et <span class="hl-blue">formaliser le processus de décantation</span> afin d'en déduire la <span class="hl-yellow">logique de programmation</span> applicative. Il a évolué à plusieurs reprises au fil des échanges pour intégrer de nouvelles règles de gestion, comme la validation des visas techniciens. Il constitue le support utilisé pour confirmer avec les utilisateurs que le comportement attendu du programme correspond bien à la réalité du terrain.</p>
+        <p>Sa réalisation n'a pas été sans difficulté : il a fallu se mettre d'accord sur l'ordre des opérations — notamment savoir à quel moment coller l'étiquette sur le tube et s'il fallait d'abord scanner les paillettes. Ce processus n'étant pas officiellement inscrit nulle part, <span class="hl-blue">le workflow a servi de document de référence pour fixer ces décisions</span>.</p>
         <p>Le processus modélisé est le suivant : réception du formulaire de demande, impression de l'étiquette et vérification de son code-barres par rapport au formulaire, scan séquentiel de chaque paillette pour contrôler sa conformité, puis transvasement dans le tube d'envoi. Le workflow précise également les étapes journalisées dans les fichiers traces, les erreurs bloquantes, et les points de redirection en cas d'anomalie.</p>
+        
+        <button class="next-tab-btn" @click="activeTab = 'trace2'">Continuer vers Trace 2 ➤</button>
+      </div>
+
+      <!-- Onglet Trace 2 -->
+      <div v-if="activeTab === 'trace2'" class="retro-card trace-card">
+        <h3>Trace 2 : Architecture modulaire et documentation nationale (VerifEtiquette)</h3>
+        <div class="badge-meta">
+          <span class="savoir-faire-badge badge-dev">Architecture logicielle</span>
+          <span class="savoir-faire-badge badge-plan">Documentation</span>
+        </div>
+        
+        <div class="trace-visual flex-images">
+          <figure>
+            <img src="/src/assets/trace/initialiserChemintraceVerifEtiquette.png" alt="Trace initialisation" />
+            <figcaption>Trace 2.1 — Fonction Initialiser-CheminTrace (code PowerShell)</figcaption>
+          </figure>
+          <figure>
+            <img src="/src/assets/trace/ficheIntiVerifEtiquette2.png" alt="Fiche INTI XWiki - fichier configuration" />
+            <figcaption>Trace 2.2 — Fiche XWiki : liste des visas autorisés dans le .ini</figcaption>
+          </figure>
+          <figure>
+            <img src="/src/assets/trace/ficheIntiVerifEtiquette4.png" alt="Fiche INTI XWiki - dysfonctionnements" />
+            <figcaption>Trace 2.3 — Fiche XWiki : dysfonctionnements courants et diagnostic</figcaption>
+          </figure>
+        </div>
+        
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-green">Concevoir une architecture logicielle maintenable par des non-développeurs</span>, <span class="hl-pink">rédiger une documentation opérationnelle destinée à des techniciens tiers</span>.</p>
+        <p><strong>Description :</strong> Dans la trace 2.1, cet extrait de code montre la fonction <code>Initialiser-CheminTrace</code>. Elle lit d'abord le chemin du dossier de traces dans l'encadré rouge dans le fichier de configuration <code>.ini</code>, puis enchaîne une série de vérifications défensives (flèches rouges) : existence du lecteur réseau, existence du dossier cible (créé automatiquement si absent), et permissions d'écriture testées via un fichier temporaire. En cas d'échec à n'importe quelle étape, une exception explicite est levée avec un message d'erreur contextualisé. Cela montre une <span class="hl-green">architecture logicielle robuste</span>.</p>
+        <p>Ce choix d'architecture répond à une contrainte concrète : je suis la seule développeuse de cette application, et les utilisateurs de la biothèque doivent pouvoir modifier certains paramètres sans intervenir sur le code. <span class="hl-green">Le fichier <code>.ini</code> externalise trois éléments : le nom de l'imprimante, le chemin des fichiers de trace, et la liste des visas techniciens autorisés que l'on voit dans la trace 2.2.</span> Cela permet, par exemple, d'ajouter le visa d'un nouveau collaborateur sans aucune modification du script.</p>
+        <p>Pour garantir la maintenabilité au-delà de ma présence, j'ai <span class="hl-pink">rédigé une documentation</span> publiée sur la plateforme nationale XWiki de l'EFS. La trace 2.3 illustre la section dédiée aux dysfonctionnements typiques et aux commandes PowerShell de diagnostic associées. <span class="hl-pink">Accessible à tous les techniciens de support au niveau national,</span> concrètement si un technicien de support informatique (AMI) national est appelé pour un incident sur ce poste à Dijon, il peut consulter cette fiche sans avoir à me contacter — ce qui était l'un des objectifs explicites de la conception.</p>
         
         <button class="next-tab-btn" @click="activeTab = 'trace3'">Continuer vers Trace 3 ➔</button>
       </div>
@@ -115,45 +107,17 @@
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> Concevoir un algorithme de vérification adapté aux contraintes matérielles, gérer l'état d'un formulaire GUI en environnement événementiel.</p>
-        <p><strong>Description :</strong> Cet extrait de code (trace 3) montre le gestionnaire d'événement <code>TextChanged</code>, déclenché automatiquement à chaque scan (premier encadré rouge). Il valide d'abord la longueur du code (11 caractères) et son format via une expression régulière, puis compare le code scanné au code de référence issu du formulaire. C'est l'<span class="hl-dev">algorithmique</span> principale. En cas de non-conformité, l'erreur est consignée dans le fichier de trace et l'utilisateur est invité à rescanner, sans interrompre le processus (deuxième encadré rouge). Si le code est valide, un compteur s'incrémente ; une fois toutes les paillettes validées, une pop-up de confirmation s'affiche et le formulaire se ferme avec un résultat de succès (troisième encadré rouge).</p>
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-purple">Concevoir un algorithme de vérification adapté aux contraintes matérielles</span>, <span class="hl-orange">gérer l'état d'un formulaire GUI en environnement événementiel</span>.</p>
+        <p><strong>Description :</strong> Cet extrait de code (trace 3) montre le gestionnaire d'événement <code>TextChanged</code>, déclenché automatiquement à chaque scan (premier encadré rouge). Il valide d'abord la longueur du code (11 caractères) et son format via une expression régulière, puis compare le code scanné au code de référence issu du formulaire. C'est l'<span class="hl-purple">algorithmique</span> principale. En cas de non-conformité, l'erreur est consignée dans le fichier de trace et l'utilisateur est invité à rescanner, sans interrompre le processus (deuxième encadré rouge). Si le code est valide, un compteur s'incrémente ; une fois toutes les paillettes validées, une pop-up de confirmation s'affiche et le formulaire se ferme avec un résultat de succès (troisième encadré rouge).</p>
         <p>Un détail notable : le commentaire <code># PAS de $form.Close() ni de DialogResult ici</code> (première flèche rouge) en cas d'erreur n'est pas une explication générale — c'est une note de décision d'architecture. Fermer le formulaire en cas d'erreur aurait terminé l'étape en cours et forcé un redémarrage du processus depuis le début. Le choix a été fait de maintenir le formulaire ouvert, de signaler l'erreur visuellement en rouge, et de permettre un nouveau scan sans perdre le contexte de l'opération.</p>
-        <p>Le <code>BeginInvoke([Action]{...})</code> (deuxième flèche rouge) utilisé pour vider le champ après chaque lecture répond à une contrainte matérielle : une douchette code-barres envoie ses caractères très rapidement. Appeler <code>$txtScan.Text = ""</code> directement dans le gestionnaire <code>TextChanged</code> risque de déclencher un nouvel événement avant que le traitement du scan en cours soit terminé, provoquant des lectures partielles ou des validations ratées. <code>BeginInvoke</code> reporte cette réinitialisation après la fin du traitement en cours, garantissant qu'aucune paillette ne soit ignorée ou mal validée lors d'un passage rapide de la douchette. Ceci est indispensable pour <span class="hl-opti">gérer l'état GUI</span>.</p>
+        <p>Le <code>BeginInvoke([Action]{...})</code> (deuxième flèche rouge) utilisé pour vider le champ après chaque lecture répond à une contrainte matérielle : une douchette code-barres envoie ses caractères très rapidement. Appeler <code>$txtScan.Text = ""</code> directement dans le gestionnaire <code>TextChanged</code> risque de déclencher un nouvel événement avant que le traitement du scan en cours soit terminé, provoquant des lectures partielles ou des validations ratées. <code>BeginInvoke</code> reporte cette réinitialisation après la fin du traitement en cours, garantissant qu'aucune paillette ne soit ignorée ou mal validée lors d'un passage rapide de la douchette. Ceci est indispensable pour <span class="hl-orange">gérer l'état GUI</span>.</p>
         
         <button class="next-tab-btn" @click="activeTab = 'trace4'">Continuer vers Trace 4 ➔</button>
       </div>
 
       <!-- Onglet Trace 4 -->
       <div v-if="activeTab === 'trace4'" class="retro-card trace-card">
-        <h3>Trace 4 : Gestion du buffer de scan et soumission automatique (DEDALE)</h3>
-        <div class="badge-meta">
-          <span class="savoir-faire-badge badge-dev">Gestion d'état</span>
-          <span class="savoir-faire-badge badge-opti">Structure de données</span>
-        </div>
-        
-        <div class="trace-visual flex-images">
-          <figure>
-            <img src="/src/assets/trace/soumettrebuffer.png" alt="Fonction soumettreBuffer" />
-            <figcaption>Trace 4.1 — Fonction soumettreBuffer : logique de décision à chaque scan</figcaption>
-          </figure>
-          <figure>
-            <img src="/src/assets/trace/onSessionExpire.png" alt="Fonction onSessionExpire" />
-            <figcaption>Trace 4.2 — Fonction onSessionExpire : soumission automatique à l'expiration</figcaption>
-          </figure>
-        </div>
-        
-        <p><strong>Savoir-faire illustrés :</strong> Concevoir une logique de gestion d'état adaptée aux contraintes d'usage, implémenter un mécanisme de buffer en JavaScript, identifier la structure de données adaptée à un problème de cohérence inter-champs.</p>
-        <p><strong>Description :</strong> Ces deux fonctions de la trace 4 implémentent la logique de <strong>buffer</strong> de scan. Un buffer est une zone mémoire temporaire qui stocke des données en attente de traitement — ici, il retient le produit en cours de scan et sa quantité accumulée, avant de les envoyer au serveur. Cette logique est conçue pour permettre à un utilisateur de scanner plusieurs produits différents à la suite avec une douchette, sans manipulation manuelle entre chaque produit.</p>
-        <p>À chaque scan <strong>EAN</strong> (code-barres international d'identification des produits, comme les codes-barres des supermarchés), le système vérifie si le code correspond au produit dans le buffer pour <span class="hl-dev">gérer l'état</span>. Si c'est le même produit, la quantité est incrémentée sans soumission immédiate. Si c'est un produit différent, le buffer est soumis automatiquement — enregistrant le mouvement de stock — et une nouvelle session commence avec le nouveau produit. La fonction <code>onSessionExpire()</code> déclenche le même mécanisme à l'expiration du compte à rebours : si un scan est en attente, il est soumis avant réinitialisation ; sinon, la session reste active avec le même sens d'action (entrée ou sortie), évitant à l'utilisateur de devoir le resélectionner.</p>
-        <p>La soumission est réalisée via <code>requestSubmit()</code> avec un fallback sur <code>submit.call()</code> pour la compatibilité navigateur, sans passer par le bouton visible — ce qui garantit l'exécution de la logique de validation du formulaire.</p>
-        <p>Ce buffer est né d'un problème de cohérence : les deux champs du formulaire (code-barres et quantité) étaient liés à deux variables séparées, rendant la vérification avant soumission complexe. En regroupant les données d'un scan dans une <span class="hl-opti">structure de données</span> unique indexée par la clé produit, la vérification se réduit à tester l'existence d'une seule variable. C'est au cours de cette réflexion que j'ai découvert que les tableaux PHP sont nativement des maps associatives (clé → valeur), rendant l'implémentation côté serveur directement compatible.</p>
-        
-        <button class="next-tab-btn" @click="activeTab = 'trace5'">Continuer vers Trace 5 ➔</button>
-      </div>
-
-      <!-- Onglet Trace 5 -->
-      <div v-if="activeTab === 'trace5'" class="retro-card trace-card">
-        <h3>Trace 5 : Intégration dans une base de données existante (DEDALE)</h3>
+        <h3>Trace 4 : Intégration dans une base de données existante (DEDALE)</h3>
         <div class="badge-meta">
           <span class="savoir-faire-badge badge-data">Modélisation BDD</span>
           <span class="savoir-faire-badge badge-plan">Documentation</span>
@@ -162,19 +126,47 @@
         <div class="trace-visual flex-images">
           <figure>
             <img src="/src/assets/trace/MLDdedale.png" alt="MLD DEDALE" />
-            <figcaption>Trace 5.1 — MLD : tables existantes (rose) et nouvelles tables (bleu)</figcaption>
+            <figcaption>Trace 4.1 — MLD : tables existantes (rose) et nouvelles tables (bleu)</figcaption>
           </figure>
           <figure>
-            <img src="/src/assets/trace/cdcDedaleHistorique.png" alt="Dictionnaire de données - table NETWORK_HISTO" />
-            <figcaption>Trace 5.2 — Dictionnaire de données : attributs de la table NETWORK_HISTO</figcaption>
+            <img src="/src/assets/trace/cdcdedaleHisto.png" alt="Dictionnaire de données - table NETWORK_HISTO" />
+            <figcaption>Trace 4.2 — Dictionnaire de données : attributs de la table NETWORK_HISTO</figcaption>
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> Concevoir et intégrer de nouvelles tables dans une base de données existante, justifier des choix de modélisation en cohérence avec l'existant.</p>
-        <p><strong>Description :</strong> La trace 5.1 présente le Modèle Logique de Données (MLD) qui distingue visuellement les tables existantes (rose) et les tables créées pour le module (bleu). Les nouvelles tables ont été nommées et typées en cohérence avec les conventions de la base Oracle existante, pour assurer la <span class="hl-data">modélisation en base de données</span> pérenne et la maintenabilité par l'équipe après ma période d'alternance.</p>
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-cyan">Concevoir et intégrer de nouvelles tables dans une base de données existante</span>, <span class="hl-magenta">justifier des choix de modélisation en cohérence avec l'existant</span>.</p>
+        <p><strong>Description :</strong> La trace 4.1 présente le Modèle Logique de Données (MLD) qui distingue visuellement les tables existantes (rose) et les tables créées pour le module (bleu). Les nouvelles tables ont été nommées et typées en cohérence avec les conventions de la base Oracle existante, pour assurer la <span class="hl-cyan">modélisation en base de données</span> pérenne et la maintenabilité par l'équipe après ma période d'alternance.</p>
         <p>Deux choix de modélisation méritent justification. Le champ <code>STATUT_ALERTE</code> dans la table <code>STOCK_ALERT</code> utilise un entier (0, 1) plutôt qu'une table de référence dédiée : deux états fixes ne justifiaient pas une table supplémentaire, à condition que les valeurs soient documentées — ce qui est le cas dans le cahier des charges. De même, <code>STOCK_STATUT</code> dans la table <code>STOCK_MATERIEL</code> est un booléen permettant de désactiver un produit sans le supprimer, afin de préserver l'historique des mouvements. Ces choix pragmatiques ont été validés avec l'équipe et documentés.</p>
         <p>La table <code>STOCK_MOUVEMENT</code> référence des codes-barres physiques correspondant aux étiquettes collées sur le Raspberry Pi (codes d'incrément et de décrément), auxquels s'ajoute une option de correction manuelle pour le gestionnaire de parc.</p>
-        <p>La trace 5.2 présente le dictionnaire de données qui précise pour chaque attribut de <code>NETWORK_HISTO</code> son rôle dans le module, les valeurs attendues et les contraintes. Ce document a été utilisé lors des réunions de validation pour s'assurer que les données enregistrées correspondaient aux besoins métier. Il fait office de <span class="hl-plan">documentation technique</span> de référence.</p>
+        <p>La trace 4.2 présente le dictionnaire de données qui précise pour chaque attribut de <code>NETWORK_HISTO</code> son rôle dans le module, les valeurs attendues et les contraintes. Ce document a été utilisé lors des réunions de validation pour s'assurer que les données enregistrées correspondaient aux besoins métier. Il fait office de <span class="hl-magenta">documentation technique</span> de référence.</p>
+        
+        <button class="next-tab-btn" @click="activeTab = 'trace5'">Continuer vers Trace 5 ➔</button>
+      </div>
+
+      <!-- Onglet Trace 5 -->
+      <div v-if="activeTab === 'trace5'" class="retro-card trace-card">
+        <h3>Trace 5 : Gestion du buffer de scan et soumission automatique (DEDALE)</h3>
+        <div class="badge-meta">
+          <span class="savoir-faire-badge badge-dev">Gestion d'état</span>
+          <span class="savoir-faire-badge badge-opti">Structure de données</span>
+        </div>
+        
+        <div class="trace-visual flex-images">
+          <figure>
+            <img src="/src/assets/trace/soumettrebuffer.png" alt="Fonction soumettreBuffer" />
+            <figcaption>Trace 5.1 — Fonction soumettreBuffer : logique de décision à chaque scan</figcaption>
+          </figure>
+          <figure>
+            <img src="/src/assets/trace/onSessionExpire.png" alt="Fonction onSessionExpire" />
+            <figcaption>Trace 5.2 — Fonction onSessionExpire : soumission automatique à l'expiration</figcaption>
+          </figure>
+        </div>
+        
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-teal">Concevoir une logique de gestion d'état adaptée aux contraintes d'usage</span>, implémenter un mécanisme de buffer en JavaScript, <span class="hl-amber">identifier la structure de données adaptée à un problème de cohérence inter-champs</span>.</p>
+        <p><strong>Description :</strong> Ces deux fonctions de la trace 4 implémentent la logique de <strong>buffer</strong> de scan. Un buffer est une zone mémoire temporaire qui stocke des données en attente de traitement — ici, il retient le produit en cours de scan et sa quantité accumulée, avant de les envoyer au serveur. Cette logique est conçue pour permettre à un utilisateur de scanner plusieurs produits différents à la suite avec une douchette, sans manipulation manuelle entre chaque produit.</p>
+        <p>À chaque scan <strong>EAN</strong> (code-barres international d'identification des produits, comme les codes-barres des supermarchés), le système vérifie si le code correspond au produit dans le buffer pour <span class="hl-teal">gérer l'état</span>. Si c'est le même produit, la quantité est incrémentée sans soumission immédiate. Si c'est un produit différent, le buffer est soumis automatiquement — enregistrant le mouvement de stock — et une nouvelle session commence avec le nouveau produit. La fonction <code>onSessionExpire()</code> déclenche le même mécanisme à l'expiration du compte à rebours : si un scan est en attente, il est soumis avant réinitialisation ; sinon, la session reste active avec le même sens d'action (entrée ou sortie), évitant à l'utilisateur de devoir le resélectionner.</p>
+        <p>La soumission est réalisée via <code>requestSubmit()</code> avec un fallback sur <code>submit.call()</code> pour la compatibilité navigateur, sans passer par le bouton visible — ce qui garantit l'exécution de la logique de validation du formulaire.</p>
+        <p>Ce buffer est né d'un problème de cohérence : les deux champs du formulaire (code-barres et quantité) étaient liés à deux variables séparées, rendant la vérification avant soumission complexe. En regroupant les données d'un scan dans une <span class="hl-amber">structure de données</span> unique indexée par la clé produit, la vérification se réduit à tester l'existence d'une seule variable. C'est au cours de cette réflexion que j'ai découvert que les tableaux PHP sont nativement des maps associatives (clé → valeur), rendant l'implémentation côté serveur directement compatible.</p>
         
         <button class="next-tab-btn" @click="activeTab = 'bilan'">Continuer vers Bilan ➔</button>
       </div>
