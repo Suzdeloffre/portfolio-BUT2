@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="top-signature">Suzanne Deloffre | S4-2026</div>
     <NavBar />
     
     <router-view v-slot="{ Component }">
