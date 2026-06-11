@@ -50,9 +50,9 @@
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> Définir et exécuter un plan de tests, identifier les comportements inattendus liés à l'environnement matériel.</p>
-        <p><strong>Description :</strong> La trace 6.1 présente les tests de recette réalisés pour VerifEtiquette avant déploiement. Cette démarche a permis d'<span class="hl-opti">identifier un comportement inattendu lié à l'environnement matériel</span> : la douchette de l'utilisateur envoyait une tabulation au lieu d'une validation en fin de scan, nécessitant un ajustement du programme.</p>
-        <p>La trace 6.2 présente le rapport de tests du livrable 2 de DEDALE. Ce rapport est <span class="hl-dev">rédigé dès le début du développement d'un livrable</span>, avant même de commencer à coder, afin de me servir de feuille de route tout au long du développement et de savoir où j'en suis à tout moment. Il est mis à jour régulièrement et partagé avec l'équipe via un répertoire commun, leur offrant un visuel de l'état de l'application entre les périodes en entreprise et les semaines école. Les codes couleurs et commentaires permettent à un collègue de <span class="hl-plan">reprendre le contexte</span> rapidement.</p>
+        <p><strong>Savoir-faire illustrés :</strong> Définir et exécuter un plan de tests, <span class="hl-purple">identifier les comportements inattendus liés à l'environnement matériel</span>.</p>
+        <p><strong>Description :</strong> La trace 6.1 présente les tests de recette réalisés pour VerifEtiquette avant déploiement. Cette démarche a permis d'<span class="hl-purple">identifier un comportement inattendu lié à l'environnement matériel</span> : <span class="hl-purple">la douchette de l'utilisateur envoyait une tabulation au lieu d'une validation en fin de scan, nécessitant un ajustement du programme.</span></p>
+        <p>La trace 6.2 présente le rapport de tests du livrable 2 de DEDALE. Ce rapport est rédigé dès le début du développement d'un livrable, avant même de commencer à coder, afin de me servir de feuille de route tout au long du développement et de savoir où j'en suis à tout moment. <span class="hl-pink">Il est mis à jour régulièrement et partagé avec l'équipe via un répertoire commun, leur offrant un visuel de l'état de l'application entre les périodes en entreprise et les semaines école.</span> Les codes couleurs et commentaires permettent à un collègue de reprendre le contexte rapidement.</p>
         <button class="next-tab-btn" @click="activeTab = 'trace7'">Continuer vers Trace 7 ➔</button>
       </div>
 
@@ -71,8 +71,8 @@
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> Planifier un projet en livrables, anticiper les dépendances, estimer la charge de travail dans un contexte d'alternance.</p>
-        <p><strong>Description :</strong> Ce diagramme de Gantt <span class="hl-plan">structure le projet en six livrables</span>. Le premier a été dédié à la prise en main de l'existant et de la base de données, avec affichage des données via des jeux d'essais — choix délibéré pour ne pas développer sur une base mal comprise. Le deuxième livrable constitue le cœur fonctionnel (gestion de stock). La planification intègre les alternances semaines école/semaines entreprise pour <span class="hl-plan">estimer la charge de travail</span> et rester réaliste. Des retards ont été accumulés en raison d'anomalies imprévues et de shift de support informatique ; ils ont conduit à réévaluer les priorités et à reporter certaines fonctionnalités aux livrables suivants.</p>
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-blue">Planifier un projet en livrables, anticiper les dépendances, estimer la charge de travail dans un contexte d'alternance.</span></p>
+        <p><strong>Description :</strong> Ce diagramme de Gantt structure le projet en six livrables. Le premier a été dédié à la prise en main de l'existant et de la base de données, avec affichage des données via des jeux d'essais — choix délibéré pour ne pas développer sur une base mal comprise. Le deuxième livrable constitue le cœur fonctionnel (gestion de stock). <span class="hl-blue">La planification intègre les alternances semaines école/semaines entreprise pour estimer la charge de travail et rester réaliste.</span> Des retards ont été accumulés en raison d'anomalies imprévues et de shift de support informatique ; ils ont conduit à réévaluer les priorités et à reporter certaines fonctionnalités aux livrables suivants.</p>
         <button class="next-tab-btn" @click="activeTab = 'trace8'">Continuer vers Trace 8 ➔</button>
       </div>
 
@@ -91,8 +91,8 @@
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> Maintenir une documentation projet vivante, gérer les évolutions du besoin en cours de développement.</p>
-        <p><strong>Description :</strong> Suite au comité de pilotage du premier livrable, le cahier des charges a été mis à jour pour <span class="hl-team">gérer les évolutions du besoin</span> et intégrer les retours de l'équipe (encadré rouge de la trace 8.1), matérialisés par des ajouts surlignés en jaune. Un historique des versions est maintenu pour distinguer les besoins initiaux des évolutions demandées en cours de projet. Le document comprend 12 parties et intègre notamment les critères de recette, permettant de <span class="hl-plan">maintenir une documentation projet vivante</span> et définir objectivement les conditions de validation de chaque livrable.</p>
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-blue">Maintenir une documentation projet vivante, gérer les évolutions du besoin en cours de développement.</span></p>
+        <p><strong>Description :</strong> Suite au comité de pilotage du premier livrable, <span class="hl-blue">le cahier des charges a été mis à jour pour gérer les évolutions du besoin et intégrer les retours de l'équipe (encadré rouge de la trace 8.1), matérialisés par des ajouts surlignés en jaune.</span> Un historique des versions est maintenu pour distinguer les besoins initiaux des évolutions demandées en cours de projet. Le document comprend 12 parties et intègre notamment les critères de recette, permettant de maintenir une documentation projet vivante et définir objectivement les conditions de validation de chaque livrable.</p>
         <button class="next-tab-btn" @click="activeTab = 'bilan'">Continuer vers Bilan ➔</button>
       </div>
 
