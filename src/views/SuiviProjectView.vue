@@ -71,8 +71,8 @@
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-blue">Planifier un projet en livrables, anticiper les dépendances, estimer la charge de travail dans un contexte d'alternance.</span></p>
-        <p><strong>Description :</strong> Ce diagramme de Gantt structure le projet en six livrables. Le premier a été dédié à la prise en main de l'existant et de la base de données, avec affichage des données via des jeux d'essais — choix délibéré pour ne pas développer sur une base mal comprise. Le deuxième livrable constitue le cœur fonctionnel (gestion de stock). <span class="hl-blue">La planification intègre les alternances semaines école/semaines entreprise pour rester réaliste.</span> Des retards ont été accumulés en raison d'anomalies imprévues et de shift de support informatique ; ils ont conduit à réévaluer les priorités et à reporter certaines fonctionnalités aux livrables suivants.</p>
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-green">Planifier un projet en livrables</span>, <span class="hl-yellow">estimer la charge de travail dans un contexte d'alternance.</span></p>
+        <p><strong>Description :</strong> Ce diagramme de Gantt structure <span class="hl-green">le projet en six livrables.</span> Le premier a été dédié à la prise en main de l'existant et de la base de données, avec affichage des données via des jeux d'essais — choix délibéré pour ne pas développer sur une base mal comprise. <span class="hl-green">Le deuxième livrable constitue le cœur fonctionnel (gestion de stock).</span> <span class="hl-yellow">La planification intègre les alternances semaines école/semaines entreprise pour rester réaliste.</span> Des retards ont été accumulés en raison d'anomalies imprévues et de shift de support informatique ; ils ont conduit à réévaluer les priorités et à reporter certaines fonctionnalités aux livrables suivants.</p>
         <button class="next-tab-btn" @click="activeTab = 'trace8'">Continuer vers Trace 8 ➔</button>
       </div>
 
@@ -91,8 +91,8 @@
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-blue">Maintenir une documentation projet vivante, gérer les évolutions du besoin en cours de développement.</span></p>
-        <p><strong>Description :</strong> Suite au comité de pilotage du premier livrable, <span class="hl-blue">le cahier des charges a été mis à jour pour intégrer les retours de l'équipe, matérialisés par des ajouts surlignés en jaune.</span> <span class="hl-blue">Un historique des versions est maintenu pour distinguer les besoins initiaux des évolutions demandées en cours de projet.</span> Le document comprend 12 parties et intègre notamment les critères de recette, permettant de maintenir une documentation projet vivante et définir objectivement les conditions de validation de chaque livrable.</p>
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-orange">Maintenir une documentation projet vivante</span>, <span class="hl-blue">gérer les évolutions du besoin en cours de développement.</span></p>
+        <p><strong>Description :</strong> Suite au comité de pilotage du premier livrable, <span class="hl-orange">le cahier des charges a été mis à jour pour intégrer les retours de l'équipe, comme montré dans l'encadré rouge.</span> <span class="hl-blue">Un historique des versions est maintenu pour distinguer les besoins initiaux des évolutions demandées en cours de projet.</span> Le document comprend 12 parties et intègre notamment les critères de recette, permettant de maintenir une documentation projet vivante et définir objectivement les conditions de validation de chaque livrable.</p>
         <button class="next-tab-btn" @click="activeTab = 'bilan'">Continuer vers Bilan ➔</button>
       </div>
 
