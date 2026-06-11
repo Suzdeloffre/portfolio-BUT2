@@ -1,8 +1,5 @@
-https://Suzdeloffre.github.io/portfolio-BUT2/
+# Portfolio BUT2 - Suzanne Deloffre
 
+Bienvenue sur le dépôt de mon portfolio, réalisé dans le cadre de ma deuxième année de BUT Informatique.
 
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+🌐 **Lien vers le site en ligne :** [https://suzdeloffre.github.io/portfolio-BUT2/](https://suzdeloffre.github.io/portfolio-BUT2/)
