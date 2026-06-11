@@ -50,7 +50,7 @@
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> Définir et exécuter un plan de tests, <span class="hl-purple">identifier les comportements inattendus liés à l'environnement matériel</span>.</p>
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-pink">Définir et exécuter un plan de tests</span>, <span class="hl-purple">identifier les comportements inattendus liés à l'environnement matériel</span>.</p>
         <p><strong>Description :</strong> La trace 6.1 présente les tests de recette réalisés pour VerifEtiquette avant déploiement. Cette démarche a permis d'<span class="hl-purple">identifier un comportement inattendu lié à l'environnement matériel</span> : <span class="hl-purple">la douchette de l'utilisateur envoyait une tabulation au lieu d'une validation en fin de scan, nécessitant un ajustement du programme.</span></p>
         <p>La trace 6.2 présente le rapport de tests du livrable 2 de DEDALE. Ce rapport est rédigé dès le début du développement d'un livrable, avant même de commencer à coder, afin de me servir de feuille de route tout au long du développement et de savoir où j'en suis à tout moment. <span class="hl-pink">Il est mis à jour régulièrement et partagé avec l'équipe via un répertoire commun, leur offrant un visuel de l'état de l'application entre les périodes en entreprise et les semaines école.</span> Les codes couleurs et commentaires permettent à un collègue de reprendre le contexte rapidement.</p>
         <button class="next-tab-btn" @click="activeTab = 'trace7'">Continuer vers Trace 7 ➔</button>
@@ -92,7 +92,7 @@
         </div>
         
         <p><strong>Savoir-faire illustrés :</strong> <span class="hl-blue">Maintenir une documentation projet vivante, gérer les évolutions du besoin en cours de développement.</span></p>
-        <p><strong>Description :</strong> Suite au comité de pilotage du premier livrable, <span class="hl-blue">le cahier des charges a été mis à jour pour gérer les évolutions du besoin et intégrer les retours de l'équipe (encadré rouge de la trace 8.1), matérialisés par des ajouts surlignés en jaune.</span> Un historique des versions est maintenu pour distinguer les besoins initiaux des évolutions demandées en cours de projet. Le document comprend 12 parties et intègre notamment les critères de recette, permettant de maintenir une documentation projet vivante et définir objectivement les conditions de validation de chaque livrable.</p>
+        <p><strong>Description :</strong> Suite au comité de pilotage du premier livrable, <span class="hl-blue">le cahier des charges a été mis à jour pour gérer les évolutions du besoin et intégrer les retours de l'équipe (encadré rouge de la trace 8.1), matérialisés par des ajouts surlignés en jaune.</span> <span class="hl-blue">Un historique des versions est maintenu pour distinguer les besoins initiaux des évolutions demandées en cours de projet.</span> Le document comprend 12 parties et intègre notamment les critères de recette, permettant de maintenir une documentation projet vivante et définir objectivement les conditions de validation de chaque livrable.</p>
         <button class="next-tab-btn" @click="activeTab = 'bilan'">Continuer vers Bilan ➔</button>
       </div>
 
