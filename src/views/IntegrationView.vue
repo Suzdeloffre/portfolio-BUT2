@@ -49,8 +49,8 @@
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-pink">Identifier les bons interlocuteurs dans une organisation étendue, utiliser les outils collaboratifs de manière proactive pour débloquer des situations techniques.</span></p>
-        <p><strong>Description :</strong> La trace 9.1 montre les canaux Teams de l'EFS. Le premier encadré rouge montre les canaux régionaux, et le deuxième encadré montre les différents canaux nationaux avec les services que l'on peut contacter en cas de problème. En cas de blocage technique, <span class="hl-pink">j'utilise ces outils collaboratifs pour solliciter directement les experts compétents au niveau national, plutôt qu'attendre une escalade hiérarchique.</span> Cette organisation s'appuie également sur une réunion d'entraide AMI quotidienne, active toute la journée de shift national : elle permet de poser des questions en direct, de tagger un service ou une personne sur un ticket, et d'identifier les interlocuteurs pour obtenir une réponse rapide. <span class="hl-pink">Cette démarche m'a permis de résoudre des situations que mon périmètre régional seul n'aurait pas pu traiter.</span></p>
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-pink">Identifier les bons interlocuteurs dans une organisation étendue</span>, <span class="hl-pink">utiliser les outils collaboratifs de manière proactive pour débloquer des situations techniques</span>.</p>
+        <p><strong>Description :</strong> La trace 9.1 montre les canaux Teams de l'EFS. Le premier encadré rouge montre les canaux régionaux, et le deuxième encadré montre les différents canaux nationaux avec les services que l'on peut contacter en cas de problème. En cas de blocage technique, <span class="hl-pink">j'utilise ces canaux pour solliciter directement les experts compétents au niveau national, plutôt qu'attendre une escalade hiérarchique.</span> Cette organisation s'appuie également sur une réunion d'entraide AMI quotidienne, active toute la journée de shift national : elle permet de poser des questions en direct, de tagger un service ou une personne sur un ticket, et d'identifier les interlocuteurs pour obtenir une réponse rapide. <span class="hl-pink">Cette démarche m'a permis de résoudre des situations que mon périmètre régional seul n'aurait pas pu traiter.</span></p>
         <button class="next-tab-btn" @click="activeTab = 'trace10'">Continuer vers Trace 10 ➤</button>
       </div>
 
@@ -69,8 +69,8 @@
           </figure>
         </div>
         
-        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-pink">Rendre compte de son activité, s'inscrire dans une relation hiérarchique structurée.</span></p>
-        <p><strong>Description :</strong> La trace 10.1 montre cet extrait de calendrier Outlook illustrant l'organisation de points réguliers avec mon responsable. <span class="hl-blue">Ces réunions sont l'occasion de faire le bilan des avancées, de partager les difficultés rencontrées et d'aligner les priorités avec les objectifs du service pour rendre compte efficacement.</span> <span class="hl-blue">Elles complètent les échanges informels du quotidien et assurent un suivi formalisé de mon activité, témoignant de mon adaptation à la relation hiérarchique.</span></p>
+        <p><strong>Savoir-faire illustrés :</strong> <span class="hl-pink">Rendre compte de son activité</span>, <span class="hl-blue">s'inscrire dans une relation hiérarchique structurée</span>.</p>
+        <p><strong>Description :</strong> La trace 10.1 montre cet extrait de calendrier Outlook illustrant l'organisation de points réguliers avec mon responsable. <span class="hl-pink">Ces réunions sont l'occasion de faire le bilan des avancées, de partager les difficultés rencontrées</span> et d'aligner les priorités avec les objectifs du service pour rendre compte efficacement. <span class="hl-blue">Elles complètent les échanges informels du quotidien et assurent un suivi formalisé de mon activité</span>, témoignant de mon adaptation à la relation hiérarchique.</p>
         <button class="next-tab-btn" @click="activeTab = 'bilan'">Continuer vers Bilan ➤</button>
       </div>
 
